@@ -1,13 +1,12 @@
 import Image from "next/image";
 
 interface SlideProps {
-  title: string;
   subtitle: string;
   description: string;
   image: string;
 }
 
-export default function Slide({ title, subtitle, description, image }: SlideProps) {
+export default function Slide({ subtitle, description, image }: SlideProps) {
   return (
     <div className="w-full h-screen flex flex-col p-6">
       <header className="text-3xl mb-6 mt-6 text-center">Evolving the drive with <span className="font-bold">360-degree</span><br/> nonwoven solutions</header>
